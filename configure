@@ -4314,7 +4314,7 @@ $as_echo "$as_me: configuring default subproject : softfloat" >&6;}
       enable_softfloat_sproj="yes"
       subprojects_enabled="$subprojects_enabled softfloat"
 
-$as_echo "#define SOFTFLOAT_ENABLED /**/" >>confdefs.h
+#$as_echo "#define SOFTFLOAT_ENABLED /**/" >>confdefs.h
 
 
 

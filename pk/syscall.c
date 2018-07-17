@@ -23,7 +23,7 @@ void sys_exit(int code)
     printk("%ld ticks\n", dt);
     printk("%ld cycles\n", dc);
     printk("%ld instructions\n", di);
-    printk("%d.%d%d CPI\n", dc/di, 10ULL*dc/di % 10, (100ULL*dc + di/2)/di % 10);
+    //printk("%d.%d%d CPI\n", dc/di, 10ULL*dc/di % 10, (100ULL*dc + di/2)/di % 10);
   }
   shutdown(code);
 }

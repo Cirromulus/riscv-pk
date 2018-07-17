@@ -25,6 +25,7 @@ directory is not supported; you need to use a separate build directory.
     $ mkdir build
     $ cd build
     $ ../configure --prefix=$RISCV --host=riscv64-unknown-elf
+    $ OR ../configure --host=riscv32-unknown-elf --with-arch=rv32g --disable-fp-emulation 
     $ make
     $ make install
 
@@ -33,7 +34,7 @@ by setting `--host=riscv64-unknown-linux-gnu`.
 
 By default, 64-bit (RV64) versions of `pk` and `bbl` are built.  To
 built 32-bit (RV32) versions, supply a `--enable-32bit` flag to the
-configure command.
+configure command. _Note: This does not work in official repo. See alternative configure command._
 
 The `install` step installs 64-bit build products into a directory
 matching your host (e.g. `$RISCV/riscv64-unknown-elf`). 32-bit versions 
